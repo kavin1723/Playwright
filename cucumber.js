@@ -1,7 +1,7 @@
 module.exports = {
   default: {
     require: [
-      './steps/*.js',
+      './step-definitions/*.js',
       './support/*.js'
     ],
     tags:'not @skip',
