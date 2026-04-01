@@ -5,10 +5,12 @@ class CreateAccount {
         this.lastName = page.locator('[name="last-name"]');
         this.emailAddress = page.locator('[name="email"]');
         this.password = page.locator('[name="password"]');
-        this.birthMonth = page.locator("#month");
-        this.birthDay = page.locator("#day");
-        this.phNumber = page.locator("#v-0-20");
-        this.submitButton = page.locator("#ca-profile-submit");
+        this.birthMonth = page.locator('#month');
+        this.birthDay = page.locator('#day');
+        this.phNumber = page.locator('#v-0-20');
+        this.submitButton = page.locator('#ca-profile-submit');
+
+
     }
 
     async goto() {
@@ -26,5 +28,4 @@ class CreateAccount {
         await this.submitButton.click();
     }
 }
-
 module.exports = CreateAccount;

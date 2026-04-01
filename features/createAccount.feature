@@ -1,7 +1,7 @@
 @skip
-Feature: Create Account
+Feature: Account Creation
 
   Scenario: Successful account creation
-    Given I am on the Create Account page
-    When I create an account with valid details
-    Then I should see a success message
+    Given the user is on the create account page
+    When they fill in valid account details
+    Then they should see a success message
