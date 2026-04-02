@@ -27,3 +27,8 @@ test('search bag ', async ({ page }) => {
   expect(true).toBeTruthy();
 
 })
+
+// test('order placing', async ({page}) => {
+//   const orderPlace = new orderPlace(page);
+
+// })

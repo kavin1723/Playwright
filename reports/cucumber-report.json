@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7437214700
+              "duration": 1471583900
             }
           },
           {
@@ -26,8 +26,9 @@
               "location": "step-definitions\\homePage.steps.js:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 3608890999
+              "status": "failed",
+              "duration": 5509251500,
+              "error_message": "locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"email\"]')\u001b[22m\n\n    at HomePage.signIn (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\pages\\homePage.js:19:26)\n    at CustomWorld.<anonymous> (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\step-definitions\\homePage.steps.js:10:18)"
             }
           },
           {
@@ -39,8 +40,8 @@
               "location": "step-definitions\\homePage.steps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 9712073499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -52,8 +53,8 @@
               "location": "step-definitions\\homePage.steps.js:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 1923600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -61,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1041163800
+              "duration": 996124800
             }
           }
         ],
@@ -75,82 +76,5 @@
     "name": "Home Page Search",
     "tags": [],
     "uri": "features\\homePage.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "user-login;successful-login",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Successful login",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1487653099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "the user is on the sign in page",
-            "match": {
-              "location": "step-definitions\\signIn.steps.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2826255300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "they enter valid credentials",
-            "match": {
-              "location": "step-definitions\\signIn.steps.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1143067900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "they should be logged in successfully",
-            "match": {
-              "location": "step-definitions\\signIn.steps.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6548793000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 776037199
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "user-login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "User Login",
-    "tags": [],
-    "uri": "features\\signIn.feature"
   }
 ]

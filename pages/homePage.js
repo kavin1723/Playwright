@@ -1,7 +1,7 @@
 class HomePage {
     constructor(page) {
         this.page = page;
-        this.searchBox = page.locator('#v-0-0');
+        this.searchBox = page.locator('#v-0-1');
         this.email = page.locator('[type="email"]');
         this.password = page.locator('[type="password"]');
         this.alwaysSignIn = page.locator('#true');
@@ -23,6 +23,10 @@ class HomePage {
         await this.signInButton.click();
     }
 
+    async search(item) {
+        await this.searchBox.fill(item);
+        await this.searchBox.press('Enter');
+    }
 }
 
 module.exports = HomePage;
