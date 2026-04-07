@@ -1,5 +1,96 @@
 [
   {
+    "description": "  As a Macy's guest user\n  I want to look up my order\n  So that I can view my order details",
+    "elements": [
+      {
+        "description": "",
+        "id": "macy's-guest-order-lookup;successful-order-lookup",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful order lookup",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1799927899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the Macy's order lookup page",
+            "match": {
+              "location": "step-definitions\\guestOrder.steps.js:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1332199200,
+              "error_message": "TypeError: GuestOrder is not a constructor\n    at CustomWorld.<anonymous> (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\step-definitions\\guestOrder.steps.js:12:18)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter order number \"123456789\", email \"test@example.com\", and phone \"9876543210\"",
+            "match": {
+              "location": "step-definitions\\guestOrder.steps.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I submit the order lookup form",
+            "match": {
+              "location": "step-definitions\\guestOrder.steps.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the order details page",
+            "match": {
+              "location": "step-definitions\\guestOrder.steps.js:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1618968799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "macy's-guest-order-lookup",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Macy's Guest Order Lookup",
+    "tags": [],
+    "uri": "features\\guestOrder.feature"
+  },
+  {
     "description": "",
     "elements": [
       {
@@ -14,7 +105,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1471583900
+              "duration": 1564024400
             }
           },
           {
@@ -27,8 +118,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5509251500,
-              "error_message": "locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"email\"]')\u001b[22m\n\n    at HomePage.signIn (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\pages\\homePage.js:19:26)\n    at CustomWorld.<anonymous> (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\step-definitions\\homePage.steps.js:10:18)"
+              "duration": 38921429900,
+              "error_message": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[type=\"email\"]')\u001b[22m\n\n    at HomePage.signIn (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\pages\\homePage.js:19:26)\n    at CustomWorld.<anonymous> (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\step-definitions\\homePage.steps.js:10:18)"
             }
           },
           {
@@ -62,7 +153,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 996124800
+              "duration": 2277529500
             }
           }
         ],
@@ -76,5 +167,122 @@
     "name": "Home Page Search",
     "tags": [],
     "uri": "features\\homePage.feature"
+  },
+  {
+    "description": "  As a Macy's shopper\n  I want to search for a product, add it to my bag, and place an order\n  So that I can complete my purchase",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-product-to-bag-and-checkout;successful-product-checkout",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful product checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1677932600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I have searched for \"shirt\"",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2692768900,
+              "error_message": "TypeError: searchPage.searchProduct is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2461372\\OneDrive - Cognizant\\Desktop\\Playwright\\step-definitions\\placeOrder.steps.js:18:20)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I select the first product from search results",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I add the product to my bag",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I view my bag",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I place the order",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be on the checkout page",
+            "match": {
+              "location": "step-definitions\\placeOrder.steps.js:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2135741199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-product-to-bag-and-checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add product to bag and checkout",
+    "tags": [],
+    "uri": "features\\placeOrder.feature"
   }
 ]
